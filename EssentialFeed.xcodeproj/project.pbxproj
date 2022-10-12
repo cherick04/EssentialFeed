@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C1DC1F028F7407200DDCD51 /* CacheFeedUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1DC1EF28F7407200DDCD51 /* CacheFeedUseCaseTests.swift */; };
 		7C2BFE6528ECD79E006A1A99 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2BFE6428ECD79E006A1A99 /* HTTPClient.swift */; };
 		7C2BFE6728ECD80B006A1A99 /* FeedItemsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2BFE6628ECD80B006A1A99 /* FeedItemsMapper.swift */; };
 		7C2BFE6A28ED048C006A1A99 /* URLSessionHTTPClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2BFE6928ED048C006A1A99 /* URLSessionHTTPClientTests.swift */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7C1DC1EF28F7407200DDCD51 /* CacheFeedUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheFeedUseCaseTests.swift; sourceTree = "<group>"; };
 		7C2BFE6428ECD79E006A1A99 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		7C2BFE6628ECD80B006A1A99 /* FeedItemsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItemsMapper.swift; sourceTree = "<group>"; };
 		7C2BFE6928ED048C006A1A99 /* URLSessionHTTPClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClientTests.swift; sourceTree = "<group>"; };
@@ -90,6 +92,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C1DC1EE28F7403500DDCD51 /* Feed Cache */ = {
+			isa = PBXGroup;
+			children = (
+				7C1DC1EF28F7407200DDCD51 /* CacheFeedUseCaseTests.swift */,
+			);
+			path = "Feed Cache";
+			sourceTree = "<group>";
+		};
 		7C2BFE6828ECE0C0006A1A99 /* Feed API */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +162,7 @@
 		7CE1901828E63F1F009A3DA4 /* EssentialFeedTests */ = {
 			isa = PBXGroup;
 			children = (
+				7C1DC1EE28F7403500DDCD51 /* Feed Cache */,
 				7C2BFE6828ECE0C0006A1A99 /* Feed API */,
 			);
 			path = EssentialFeedTests;
@@ -342,6 +353,7 @@
 			files = (
 				7CE1902A28E79ABD009A3DA4 /* LoadFeedFromRemoteUseCaseTests.swift in Sources */,
 				7C2BFE6D28EE3CB4006A1A99 /* XCTestCase+MemoryLeakTracking.swift in Sources */,
+				7C1DC1F028F7407200DDCD51 /* CacheFeedUseCaseTests.swift in Sources */,
 				7C2BFE6A28ED048C006A1A99 /* URLSessionHTTPClientTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
