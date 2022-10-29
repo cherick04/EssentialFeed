@@ -14,6 +14,7 @@
 		7C5D51CA290C76B600F10AC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C5D51C8290C76B600F10AC2 /* LaunchScreen.storyboard */; };
 		7C5D51D2290CAF3600F10AC2 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5D51D1290CAF3600F10AC2 /* FeedViewController.swift */; };
 		7CABD4D5290CB40100E3137C /* FeedImageViewModel+PrototypeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CABD4D4290CB40100E3137C /* FeedImageViewModel+PrototypeData.swift */; };
+		7CABD4D7290CB57800E3137C /* FeedImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CABD4D6290CB57800E3137C /* FeedImageCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		7C5D51CB290C76B600F10AC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C5D51D1290CAF3600F10AC2 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		7CABD4D4290CB40100E3137C /* FeedImageViewModel+PrototypeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeedImageViewModel+PrototypeData.swift"; sourceTree = "<group>"; };
+		7CABD4D6290CB57800E3137C /* FeedImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				7C5D51BD290C76B400F10AC2 /* AppDelegate.swift */,
 				7C5D51BF290C76B400F10AC2 /* SceneDelegate.swift */,
 				7C5D51D1290CAF3600F10AC2 /* FeedViewController.swift */,
+				7CABD4D6290CB57800E3137C /* FeedImageCell.swift */,
 				7CABD4D4290CB40100E3137C /* FeedImageViewModel+PrototypeData.swift */,
 				7C5D51C3290C76B400F10AC2 /* Main.storyboard */,
 				7C5D51C8290C76B600F10AC2 /* LaunchScreen.storyboard */,
@@ -145,6 +148,7 @@
 				7C5D51D2290CAF3600F10AC2 /* FeedViewController.swift in Sources */,
 				7C5D51C0290C76B400F10AC2 /* SceneDelegate.swift in Sources */,
 				7CABD4D5290CB40100E3137C /* FeedImageViewModel+PrototypeData.swift in Sources */,
+				7CABD4D7290CB57800E3137C /* FeedImageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
