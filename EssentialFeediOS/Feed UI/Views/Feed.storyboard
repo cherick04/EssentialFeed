@@ -133,6 +133,7 @@ Description Description</string>
                         <connections>
                             <outlet property="dataSource" destination="KOi-C4-bmv" id="dd9-Lr-zPj"/>
                             <outlet property="delegate" destination="KOi-C4-bmv" id="VJk-qF-jmK"/>
+                            <outlet property="prefetchDataSource" destination="KOi-C4-bmv" id="l79-vO-9aR"/>
                         </connections>
                     </tableView>
                     <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="29Q-s6-XDt">
