@@ -80,6 +80,9 @@ Location</string>
                                                             <state key="normal" title="↻">
                                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             </state>
+                                                            <connections>
+                                                                <action selector="retryButtonTapped" destination="QVn-zb-7Wr" eventType="touchUpInside" id="o61-Ky-sTS"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.89019607840000003" green="0.89019607840000003" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -128,6 +131,14 @@ Description Description</string>
                                         <constraint firstItem="zK3-NW-vPP" firstAttribute="top" secondItem="f1F-1i-WjM" secondAttribute="topMargin" priority="999" constant="6" id="teS-Lf-BLF"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="descriptionLabel" destination="8yI-hQ-8MX" id="c91-hg-xqA"/>
+                                    <outlet property="feedImageContainer" destination="Ljz-Df-84s" id="e6z-8H-6gW"/>
+                                    <outlet property="feedImageRetryButton" destination="DbK-Dm-XWm" id="CKH-Db-Fxh"/>
+                                    <outlet property="feedImageView" destination="cfx-yJ-dtI" id="xLG-W5-tSQ"/>
+                                    <outlet property="locationContainer" destination="zFk-PD-Vzx" id="zig-1I-qTj"/>
+                                    <outlet property="locationLabel" destination="YhM-PW-hkZ" id="6xi-i2-OdI"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
