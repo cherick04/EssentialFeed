@@ -85,6 +85,7 @@
 		7CE1902728E64061009A3DA4 /* FeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE1902628E64061009A3DA4 /* FeedLoader.swift */; };
 		7CE1902A28E79ABD009A3DA4 /* LoadFeedFromRemoteUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE1902928E79ABD009A3DA4 /* LoadFeedFromRemoteUseCaseTests.swift */; };
 		7CE1902D28E7B5C1009A3DA4 /* RemoteFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE1902C28E7B5C1009A3DA4 /* RemoteFeedLoader.swift */; };
+		7CE9E8F6291B03E80032A5EF /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE9E8F5291B03E80032A5EF /* ErrorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -215,6 +216,7 @@
 		7CE1902628E64061009A3DA4 /* FeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoader.swift; sourceTree = "<group>"; };
 		7CE1902928E79ABD009A3DA4 /* LoadFeedFromRemoteUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadFeedFromRemoteUseCaseTests.swift; sourceTree = "<group>"; };
 		7CE1902C28E7B5C1009A3DA4 /* RemoteFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoader.swift; sourceTree = "<group>"; };
+		7CE9E8F5291B03E80032A5EF /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -401,11 +403,12 @@
 			isa = PBXGroup;
 			children = (
 				7C8B8A3629115FF800E4B334 /* FeedImageCell.swift */,
+				7CE9E8F5291B03E80032A5EF /* ErrorView.swift */,
 				7C8B8A382911A9E200E4B334 /* UIView+Shimmering.swift */,
 				7C5E8BFA2914777F003395B8 /* UITableView+Dequeueing.swift */,
+				7C5E8BFC291478EF003395B8 /* UIImageView+Animations.swift */,
 				7C5E8BF629145FC2003395B8 /* Feed.storyboard */,
 				7C5E8BF829146081003395B8 /* Feed.xcassets */,
-				7C5E8BFC291478EF003395B8 /* UIImageView+Animations.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -835,6 +838,7 @@
 			files = (
 				7C5E8BEF29130B6A003395B8 /* FeedPresenter.swift in Sources */,
 				7C8B8A6F2912036B00E4B334 /* FeedImageDataLoader.swift in Sources */,
+				7CE9E8F6291B03E80032A5EF /* ErrorView.swift in Sources */,
 				7C5E8BF529141507003395B8 /* FeedViewModel.swift in Sources */,
 				7C5E8BFB2914777F003395B8 /* UITableView+Dequeueing.swift in Sources */,
 				7C5E8BF3291414EC003395B8 /* FeedLoadingViewModel.swift in Sources */,
