@@ -17,18 +17,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="Gsw-FZ-JnV" customClass="ErrorView" customModule="EssentialFeediOS" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="0.0" width="390" height="16"/>
+                            <rect key="frame" x="0.0" y="0.0" width="390" height="34"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7RF-xg-8XQ">
+                                    <rect key="frame" x="0.0" y="8" width="390" height="18"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="1" green="0.41759261489999999" blue="0.4154433012" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstItem="7RF-xg-8XQ" firstAttribute="top" secondItem="Gsw-FZ-JnV" secondAttribute="top" constant="8" id="NZF-HF-jO2"/>
+                                <constraint firstAttribute="bottom" secondItem="7RF-xg-8XQ" secondAttribute="bottom" constant="8" id="QzG-c5-SSM"/>
+                                <constraint firstAttribute="trailing" secondItem="7RF-xg-8XQ" secondAttribute="trailing" id="X5K-5a-dMJ"/>
+                                <constraint firstItem="7RF-xg-8XQ" firstAttribute="leading" secondItem="Gsw-FZ-JnV" secondAttribute="leading" id="ah5-IQ-KB4"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="label" destination="7RF-xg-8XQ" id="LVR-jr-q0T"/>
+                            </connections>
                         </view>
                         <view key="tableFooterView" contentMode="scaleToFill" id="f3m-V2-fIk">
-                            <rect key="frame" x="0.0" y="674" width="390" height="16"/>
+                            <rect key="frame" x="0.0" y="692" width="390" height="16"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="FeedImageCell" rowHeight="580" id="QVn-zb-7Wr" customClass="FeedImageCell" customModule="EssentialFeediOS" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="66" width="390" height="580"/>
+                                <rect key="frame" x="0.0" y="84" width="390" height="580"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QVn-zb-7Wr" id="f1F-1i-WjM">
                                     <rect key="frame" x="0.0" y="0.0" width="390" height="580"/>
