@@ -92,6 +92,7 @@
 		7CE9E90A291C14A60032A5EF /* FeedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE9E909291C14A60032A5EF /* FeedPresenter.swift */; };
 		7CE9E90B291C16AC0032A5EF /* Feed.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7CE9E903291B32FC0032A5EF /* Feed.strings */; };
 		7CE9E90D291C3F720032A5EF /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE9E90C291C3F720032A5EF /* FeedViewModel.swift */; };
+		7CE9E90F291C3FDA0032A5EF /* FeedLoadingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE9E90E291C3FDA0032A5EF /* FeedLoadingViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -231,6 +232,7 @@
 		7CE9E905291B32FF0032A5EF /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Feed.strings; sourceTree = "<group>"; };
 		7CE9E909291C14A60032A5EF /* FeedPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPresenter.swift; sourceTree = "<group>"; };
 		7CE9E90C291C3F720032A5EF /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		7CE9E90E291C3FDA0032A5EF /* FeedLoadingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoadingViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -613,6 +615,7 @@
 			children = (
 				7CE9E909291C14A60032A5EF /* FeedPresenter.swift */,
 				7CE9E90C291C3F720032A5EF /* FeedViewModel.swift */,
+				7CE9E90E291C3FDA0032A5EF /* FeedLoadingViewModel.swift */,
 				7CE9E903291B32FC0032A5EF /* Feed.strings */,
 			);
 			path = "Feed Presentation";
@@ -945,6 +948,7 @@
 				7CA479D52903532E0021F867 /* FeedCachePolicy.swift in Sources */,
 				7CE1902528E63F60009A3DA4 /* FeedImage.swift in Sources */,
 				7C1BC31C290A0FF60048819B /* ManagedFeedImage.swift in Sources */,
+				7CE9E90F291C3FDA0032A5EF /* FeedLoadingViewModel.swift in Sources */,
 				7CA479C22900D3B00021F867 /* LocalFeedLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
