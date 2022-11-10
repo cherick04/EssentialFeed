@@ -209,13 +209,10 @@ final class RemoteFeedImageDataLoaderTests: XCTestCase {
         wait(for: [exp], timeout: 1.0)
     }
     
-    private func anyData() -> Data {
-        Data("any data".utf8)
-    }
-    
     private func failure(_ error: RemoteFeedImageDataLoader.Error) -> FeedImageDataLoader.Result {
         .failure(error)
     }
+    
     private class HTTPClientSpy: HTTPClient {
         private struct Task: HTTPClientTask {
             let callback: () -> Void
