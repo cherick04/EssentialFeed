@@ -21,6 +21,7 @@
 		7C6AA9EB2922F43F00973725 /* FeedLoaderWithFallbackComposite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6AA9EA2922F43F00973725 /* FeedLoaderWithFallbackComposite.swift */; };
 		7CC5C7462924412E00A730D8 /* FeedImageDataLoaderWithFallbackComposite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC5C7452924412E00A730D8 /* FeedImageDataLoaderWithFallbackComposite.swift */; };
 		7CC5C7492924420500A730D8 /* XCTCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC5C7482924420500A730D8 /* XCTCase+MemoryLeakTracking.swift */; };
+		7CC5C74B2924429700A730D8 /* SharedTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC5C74A2924429700A730D8 /* SharedTestHelpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		7C6AA9EA2922F43F00973725 /* FeedLoaderWithFallbackComposite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoaderWithFallbackComposite.swift; sourceTree = "<group>"; };
 		7CC5C7452924412E00A730D8 /* FeedImageDataLoaderWithFallbackComposite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoaderWithFallbackComposite.swift; sourceTree = "<group>"; };
 		7CC5C7482924420500A730D8 /* XCTCase+MemoryLeakTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTCase+MemoryLeakTracking.swift"; sourceTree = "<group>"; };
+		7CC5C74A2924429700A730D8 /* SharedTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedTestHelpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				7CC5C7482924420500A730D8 /* XCTCase+MemoryLeakTracking.swift */,
+				7CC5C74A2924429700A730D8 /* SharedTestHelpers.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CC5C74B2924429700A730D8 /* SharedTestHelpers.swift in Sources */,
 				7C617B922923CB34004B9DDD /* FeedImageDataLoaderWithFallbackCompositeTests.swift in Sources */,
 				7CC5C7492924420500A730D8 /* XCTCase+MemoryLeakTracking.swift in Sources */,
 				7C6AA9CA29229F2C00973725 /* FeedLoaderWithFallbackCompositeTests.swift in Sources */,
