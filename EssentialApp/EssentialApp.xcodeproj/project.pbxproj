@@ -20,6 +20,7 @@
 		7C6AA9E82922A28D00973725 /* EssentialFeediOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7C6AA9E42922A28D00973725 /* EssentialFeediOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7C6AA9EB2922F43F00973725 /* FeedLoaderWithFallbackComposite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6AA9EA2922F43F00973725 /* FeedLoaderWithFallbackComposite.swift */; };
 		7CC5C7462924412E00A730D8 /* FeedImageDataLoaderWithFallbackComposite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC5C7452924412E00A730D8 /* FeedImageDataLoaderWithFallbackComposite.swift */; };
+		7CC5C7492924420500A730D8 /* XCTCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC5C7482924420500A730D8 /* XCTCase+MemoryLeakTracking.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		7C6AA9E42922A28D00973725 /* EssentialFeediOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EssentialFeediOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C6AA9EA2922F43F00973725 /* FeedLoaderWithFallbackComposite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoaderWithFallbackComposite.swift; sourceTree = "<group>"; };
 		7CC5C7452924412E00A730D8 /* FeedImageDataLoaderWithFallbackComposite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoaderWithFallbackComposite.swift; sourceTree = "<group>"; };
+		7CC5C7482924420500A730D8 /* XCTCase+MemoryLeakTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTCase+MemoryLeakTracking.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 		7C6AA9C829229F2C00973725 /* EssentialAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				7CC5C747292441DD00A730D8 /* Helpers */,
 				7C6AA9C929229F2C00973725 /* FeedLoaderWithFallbackCompositeTests.swift */,
 				7C617B912923CB34004B9DDD /* FeedImageDataLoaderWithFallbackCompositeTests.swift */,
 			);
@@ -134,6 +137,14 @@
 				7C6AA9E42922A28D00973725 /* EssentialFeediOS.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7CC5C747292441DD00A730D8 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				7CC5C7482924420500A730D8 /* XCTCase+MemoryLeakTracking.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C617B922923CB34004B9DDD /* FeedImageDataLoaderWithFallbackCompositeTests.swift in Sources */,
+				7CC5C7492924420500A730D8 /* XCTCase+MemoryLeakTracking.swift in Sources */,
 				7C6AA9CA29229F2C00973725 /* FeedLoaderWithFallbackCompositeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
