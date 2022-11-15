@@ -19,6 +19,7 @@
 		7C6AA9E72922A28D00973725 /* EssentialFeediOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C6AA9E42922A28D00973725 /* EssentialFeediOS.framework */; };
 		7C6AA9E82922A28D00973725 /* EssentialFeediOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7C6AA9E42922A28D00973725 /* EssentialFeediOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7C6AA9EB2922F43F00973725 /* FeedLoaderWithFallbackComposite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6AA9EA2922F43F00973725 /* FeedLoaderWithFallbackComposite.swift */; };
+		7CC5C7462924412E00A730D8 /* FeedImageDataLoaderWithFallbackComposite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC5C7452924412E00A730D8 /* FeedImageDataLoaderWithFallbackComposite.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		7C6AA9E32922A28D00973725 /* EssentialFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EssentialFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C6AA9E42922A28D00973725 /* EssentialFeediOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EssentialFeediOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C6AA9EA2922F43F00973725 /* FeedLoaderWithFallbackComposite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoaderWithFallbackComposite.swift; sourceTree = "<group>"; };
+		7CC5C7452924412E00A730D8 /* FeedImageDataLoaderWithFallbackComposite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoaderWithFallbackComposite.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				7C6AA9B229229F2B00973725 /* AppDelegate.swift */,
 				7C6AA9B429229F2B00973725 /* SceneDelegate.swift */,
 				7C6AA9EA2922F43F00973725 /* FeedLoaderWithFallbackComposite.swift */,
+				7CC5C7452924412E00A730D8 /* FeedImageDataLoaderWithFallbackComposite.swift */,
 				7C6AA9B829229F2B00973725 /* Main.storyboard */,
 				7C6AA9BB29229F2C00973725 /* Assets.xcassets */,
 				7C6AA9BD29229F2C00973725 /* LaunchScreen.storyboard */,
@@ -235,6 +238,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CC5C7462924412E00A730D8 /* FeedImageDataLoaderWithFallbackComposite.swift in Sources */,
 				7C6AA9B329229F2B00973725 /* AppDelegate.swift in Sources */,
 				7C6AA9EB2922F43F00973725 /* FeedLoaderWithFallbackComposite.swift in Sources */,
 				7C6AA9B529229F2B00973725 /* SceneDelegate.swift in Sources */,
