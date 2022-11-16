@@ -568,6 +568,7 @@
 				7CE1902428E63F60009A3DA4 /* FeedImage.swift */,
 				7CE1902628E64061009A3DA4 /* FeedLoader.swift */,
 				7CC5C75229246C2000A730D8 /* FeedCache.swift */,
+				7C8B8A6E2912036B00E4B334 /* FeedImageDataLoader.swift */,
 			);
 			path = "Feed Feature";
 			sourceTree = "<group>";
@@ -580,7 +581,6 @@
 				7C2BFE6628ECD80B006A1A99 /* FeedItemsMapper.swift */,
 				7CA479C52901FBB10021F867 /* RemoteFeedItem.swift */,
 				7CE9E91F291DAF9D0032A5EF /* RemoteFeedImageDataLoader.swift */,
-				7C8B8A6E2912036B00E4B334 /* FeedImageDataLoader.swift */,
 				7C2BFE6428ECD79E006A1A99 /* HTTPClient.swift */,
 				7C2BFE6E28EE5ACA006A1A99 /* URLSessionHTTPClient.swift */,
 			);
