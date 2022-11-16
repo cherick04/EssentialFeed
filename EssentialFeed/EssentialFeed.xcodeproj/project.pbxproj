@@ -479,10 +479,10 @@
 			isa = PBXGroup;
 			children = (
 				7C1BC314290A0C710048819B /* Infrastructure */,
-				7CA479C12900D3B00021F867 /* LocalFeedLoader.swift */,
-				7CA479C32900D49F0021F867 /* FeedStore.swift */,
 				7CA479C72901FC2E0021F867 /* LocalFeedImage.swift */,
 				7CA479D42903532E0021F867 /* FeedCachePolicy.swift */,
+				7CA479C32900D49F0021F867 /* FeedStore.swift */,
+				7CA479C12900D3B00021F867 /* LocalFeedLoader.swift */,
 				7CE9E928291EA0D60032A5EF /* FeedImageDataStore.swift */,
 				7CE9E92A291EA10F0032A5EF /* LocalFeedImageDataLoader.swift */,
 			);
