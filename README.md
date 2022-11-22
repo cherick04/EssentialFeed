@@ -1,6 +1,6 @@
 # Essential Feed App – Image Feed Feature
 
-[![CI](https://github.com/cherick04/EssentialFeed/actions/workflows/CI.yml/badge.svg)](https://github.com/cherick04/EssentialFeed/actions/workflows/CI.yml)
+![](https://github.com/cherick04/EssentialFeed/actions/workflows/CI-iOS.yml/badge.svg) ![](https://github.com/cherick04/EssentialFeed/actions/workflows/CI-macOS.yml/badge.svg)
 
 ## Image Feed Feature Specs
 
