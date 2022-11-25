@@ -88,20 +88,20 @@ final class LoadImageCommentsFromRemoteUseCaseTests: XCTestCase {
         
         let item1 = makeItem(
             id: UUID(),
-            imageURL: URL(string: "https://a-url.com")!
-        )
+            message: "a message",
+            createdAt: (Date(timeIntervalSince1970: 1598627222), "2020-08-28T15:07:02+00:00"),
+            username: "a username")
         
         let item2 = makeItem(
             id: UUID(),
-            description: "a description",
-            location: "a location",
-            imageURL: URL(string: "https://another-url.com")!
-        )
+            message: "another message",
+            createdAt: (Date(timeIntervalSince1970: 1577881882), "2020-01-01T12:31:22+00:00"),
+            username: "another username")
         
         let items = [item1.model, item2.model]
         
         let samples = [200, 201, 250, 280, 299]
-
+        
         samples.enumerated().forEach { index, code in
             expect(sut, toCompleteWith: .success(items), when: {
                 let json = makeItemsJSON([item1.json, item2.json])
@@ -126,7 +126,11 @@ final class LoadImageCommentsFromRemoteUseCaseTests: XCTestCase {
     
     // MARK: - Helpers
     
-    private func makeSUT(url: URL = URL(string: "https://a-given-url.com")!, file: StaticString = #filePath, line: UInt = #line) -> (sut: RemoteImageCommentsLoader, client: HTTPClientSpy) {
+    private func makeSUT(
+        url: URL = URL(string: "https://a-given-url.com")!,
+        file: StaticString = #filePath,
+        line: UInt = #line
+    ) -> (sut: RemoteImageCommentsLoader, client: HTTPClientSpy) {
         let client = HTTPClientSpy()
         let sut = RemoteImageCommentsLoader(url: url, client: client)
         trackForMemoryLeaks(sut, file: file, line: line)
@@ -138,15 +142,22 @@ final class LoadImageCommentsFromRemoteUseCaseTests: XCTestCase {
         .failure(error)
     }
     
-    private func makeItem(id: UUID, description: String? = nil, location: String? = nil, imageURL: URL) -> (model: FeedImage, json: [String: Any]) {
-        let item = FeedImage(id: id, description: description, location: location, url: imageURL)
+    private func makeItem(
+        id: UUID,
+        message: String,
+        createdAt: (date: Date, iso8601String: String),
+        username: String
+    ) -> (model: ImageComment, json: [String: Any]) {
+        let item = ImageComment(id: id, message: message, createdAt: createdAt.date, username: username)
         
-        let json = [
+        let json: [String: Any] = [
             "id": id.uuidString,
-            "description": description,
-            "location": location,
-            "image": imageURL.absoluteString
-        ].compactMapValues { $0 }
+            "message": message,
+            "created_at": createdAt.iso8601String,
+            "author": [
+                "username": username
+            ]
+        ]
         
         return (item, json)
     }
@@ -156,7 +167,13 @@ final class LoadImageCommentsFromRemoteUseCaseTests: XCTestCase {
         return try! JSONSerialization.data(withJSONObject: json)
     }
     
-    private func expect(_ sut: RemoteImageCommentsLoader, toCompleteWith expectedResult: RemoteImageCommentsLoader.Result, when action: () -> Void, file: StaticString = #filePath, line: UInt = #line) {
+    private func expect(
+        _ sut: RemoteImageCommentsLoader,
+        toCompleteWith expectedResult: RemoteImageCommentsLoader.Result,
+        when action: () -> Void,
+        file: StaticString = #filePath,
+        line: UInt = #line
+    ) {
         let exp = expectation(description: "Wait for load completion")
         sut.load { receivedResult in
             switch (receivedResult, expectedResult) {
