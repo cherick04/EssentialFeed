@@ -359,8 +359,8 @@
 			children = (
 				7CE9E91C291DAE740032A5EF /* Helpers */,
 				7CE1902928E79ABD009A3DA4 /* LoadFeedFromRemoteUseCaseTests.swift */,
-				7CE9E91A291D41BE0032A5EF /* LoadFeedImageDataFromRemoteUseCaseTests.swift */,
 				7CFFC6B9293004DF00054F68 /* LoadImageCommentsFromRemoteUseCaseTests.swift */,
+				7CE9E91A291D41BE0032A5EF /* LoadFeedImageDataFromRemoteUseCaseTests.swift */,
 				7C2BFE6928ED048C006A1A99 /* URLSessionHTTPClientTests.swift */,
 			);
 			path = "Feed API";
