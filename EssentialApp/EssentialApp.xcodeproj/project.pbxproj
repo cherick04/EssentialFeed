@@ -34,6 +34,8 @@
 		7C6AA9E62922A28D00973725 /* EssentialFeed.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7C6AA9E32922A28D00973725 /* EssentialFeed.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7C6AA9E72922A28D00973725 /* EssentialFeediOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C6AA9E42922A28D00973725 /* EssentialFeediOS.framework */; };
 		7C6AA9E82922A28D00973725 /* EssentialFeediOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7C6AA9E42922A28D00973725 /* EssentialFeediOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7CB794DB29381DC800EC0DF5 /* CommentsUIIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB794DA29381DC800EC0DF5 /* CommentsUIIntegrationTests.swift */; };
+		7CB794DD29381FC600EC0DF5 /* CommentsUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB794DC29381FC600EC0DF5 /* CommentsUIComposer.swift */; };
 		7CC5C7492924420500A730D8 /* XCTCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC5C7482924420500A730D8 /* XCTCase+MemoryLeakTracking.swift */; };
 		7CC5C74B2924429700A730D8 /* SharedTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC5C74A2924429700A730D8 /* SharedTestHelpers.swift */; };
 		7CC5C75929253BF800A730D8 /* FeedImageDataLoaderSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC5C75829253BF800A730D8 /* FeedImageDataLoaderSpy.swift */; };
@@ -95,6 +97,8 @@
 		7C6AA9C529229F2C00973725 /* EssentialAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C6AA9E32922A28D00973725 /* EssentialFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EssentialFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C6AA9E42922A28D00973725 /* EssentialFeediOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EssentialFeediOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CB794DA29381DC800EC0DF5 /* CommentsUIIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsUIIntegrationTests.swift; sourceTree = "<group>"; };
+		7CB794DC29381FC600EC0DF5 /* CommentsUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsUIComposer.swift; sourceTree = "<group>"; };
 		7CC5C7482924420500A730D8 /* XCTCase+MemoryLeakTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTCase+MemoryLeakTracking.swift"; sourceTree = "<group>"; };
 		7CC5C74A2924429700A730D8 /* SharedTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedTestHelpers.swift; sourceTree = "<group>"; };
 		7CC5C75829253BF800A730D8 /* FeedImageDataLoaderSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoaderSpy.swift; sourceTree = "<group>"; };
@@ -148,6 +152,7 @@
 				7C6AA9B429229F2B00973725 /* SceneDelegate.swift */,
 				7CFFC67F292D861100054F68 /* CombineHelpers.swift */,
 				7C223B70292697410089E7FC /* FeedUIComposer.swift */,
+				7CB794DC29381FC600EC0DF5 /* CommentsUIComposer.swift */,
 				7C223B71292697410089E7FC /* WeakRefVirtualProxy.swift */,
 				7C223B73292697420089E7FC /* LoadResourcePresentationAdapter.swift */,
 				7C223B74292697420089E7FC /* FeedViewAdapter.swift */,
@@ -165,6 +170,7 @@
 				7C223B6D292691C90089E7FC /* SceneDelegateTests.swift */,
 				7C223B8D292698030089E7FC /* FeedUIIntegrationTests.swift */,
 				7C223B8F29269D990089E7FC /* FeedAcceptanceTests.swift */,
+				7CB794DA29381DC800EC0DF5 /* CommentsUIIntegrationTests.swift */,
 			);
 			path = EssentialAppTests;
 			sourceTree = "<group>";
@@ -309,6 +315,7 @@
 				7C223B7A292697420089E7FC /* FeedUIComposer.swift in Sources */,
 				7C6AA9B529229F2B00973725 /* SceneDelegate.swift in Sources */,
 				7CFFC680292D861100054F68 /* CombineHelpers.swift in Sources */,
+				7CB794DD29381FC600EC0DF5 /* CommentsUIComposer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +323,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CB794DB29381DC800EC0DF5 /* CommentsUIIntegrationTests.swift in Sources */,
 				7CC5C74B2924429700A730D8 /* SharedTestHelpers.swift in Sources */,
 				7C223B8C292697B40089E7FC /* UIButton+TestHelpers.swift in Sources */,
 				7C223B87292697B40089E7FC /* FeedUIIntegrationTests+Localization.swift in Sources */,
