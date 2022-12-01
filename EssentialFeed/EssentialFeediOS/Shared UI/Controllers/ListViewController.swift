@@ -53,7 +53,11 @@ public final class ListViewController: UITableViewController, UITableViewDataSou
         snapshot.appendSections([0])
         snapshot.appendItems(cellControllers, toSection: 0)
         
-        dataSource.apply(snapshot)
+        if #available(iOS 15.0, *) {
+          dataSource.applySnapshotUsingReloadData(snapshot)
+        } else {
+          dataSource.apply(snapshot)
+        }
     }
     
     // MARK: - ResourceLoadingView
