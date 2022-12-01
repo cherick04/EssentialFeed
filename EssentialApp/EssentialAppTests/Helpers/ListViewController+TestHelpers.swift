@@ -31,6 +31,42 @@ extension ListViewController {
     func simulateUserInitiatedReload() {
         refreshControl?.simulatePullToRefresh()
     }
+}
+
+extension ListViewController {
+    
+    private var commentsSection: Int { 0 }
+    
+    func numberOfRenderedComments() -> Int {
+        tableView.numberOfSections == 0 ? 0 : tableView.numberOfRows(inSection: commentsSection)
+    }
+    
+    func commentMessage(at row: Int) -> String? {
+        commentView(at: row)?.messageLabel.text
+    }
+    
+    func commentDate(at row: Int) -> String? {
+        commentView(at: row)?.dateLabel.text
+    }
+    
+    func commentUsername(at row: Int) -> String? {
+        commentView(at: row)?.usernameLabel.text
+    }
+    
+    private func commentView(at row: Int) -> ImageCommentCell? {
+        guard numberOfRenderedComments() > row else {
+            return nil
+        }
+        
+        let ds = tableView.dataSource
+        let index = IndexPath(row: row, section: commentsSection)
+        return ds?.tableView(tableView, cellForRowAt: index) as? ImageCommentCell
+    }
+}
+
+extension ListViewController {
+    
+    private var feedImagesSection: Int { 0 }
     
     @discardableResult
     func simulateFeedImageViewVisible(at index: Int) -> FeedImageCell? {
@@ -42,7 +78,7 @@ extension ListViewController {
         let view = simulateFeedImageViewNotVisible(at: row)
         
         let delegate = tableView.delegate
-        let index = IndexPath(row: row, section: feedImageSection)
+        let index = IndexPath(row: row, section: feedImagesSection)
         delegate?.tableView?(tableView, willDisplay: view!, forRowAt: index)
         
         return view
@@ -53,7 +89,7 @@ extension ListViewController {
         let view = simulateFeedImageViewVisible(at: row)
         
         let delegate = tableView.delegate
-        let index = IndexPath(row: row, section: feedImageSection)
+        let index = IndexPath(row: row, section: feedImagesSection)
         delegate?.tableView?(tableView, didEndDisplaying: view!, forRowAt: index)
         
         return view
@@ -61,7 +97,7 @@ extension ListViewController {
     
     func simulateFeedImageViewNearVisible(at row: Int) {
         let ds = tableView.prefetchDataSource
-        let index = IndexPath(row: row, section: feedImageSection)
+        let index = IndexPath(row: row, section: feedImagesSection)
         ds?.tableView(tableView, prefetchRowsAt: [index])
     }
     
@@ -69,7 +105,7 @@ extension ListViewController {
         simulateFeedImageViewNearVisible(at: row)
         
         let ds = tableView.prefetchDataSource
-        let index = IndexPath(row: row, section: feedImageSection)
+        let index = IndexPath(row: row, section: feedImagesSection)
         ds?.tableView?(tableView, cancelPrefetchingForRowsAt: [index])
     }
     
@@ -78,7 +114,7 @@ extension ListViewController {
     }
     
     func numberOfRenderedFeedImageViews() -> Int {
-        tableView.numberOfSections == 0 ? 0 : tableView.numberOfRows(inSection: feedImageSection)
+        tableView.numberOfSections == 0 ? 0 : tableView.numberOfRows(inSection: feedImagesSection)
     }
     
     func feedImageView(at row: Int) -> UITableViewCell? {
@@ -87,7 +123,7 @@ extension ListViewController {
         }
         
         let ds = tableView.dataSource
-        let index = IndexPath(row: row, section: feedImageSection)
+        let index = IndexPath(row: row, section: feedImagesSection)
         return ds?.tableView(tableView, cellForRowAt: index)
     }
 }
