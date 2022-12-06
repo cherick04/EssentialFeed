@@ -93,6 +93,10 @@
 		7CB794E329396D2200EC0DF5 /* FeedEndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB794E229396D2200EC0DF5 /* FeedEndpointTests.swift */; };
 		7CB794E529396DBB00EC0DF5 /* FeedEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB794E429396DBB00EC0DF5 /* FeedEndpoint.swift */; };
 		7CBBFAF02910AD4200380A2C /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBBFAEF2910AD4200380A2C /* ListViewController.swift */; };
+		7CBD2DEC293F9513005EA58E /* LoadMoreCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBD2DEB293F9513005EA58E /* LoadMoreCellController.swift */; };
+		7CBD2DEF293F95C7005EA58E /* FEED_WITH_LOAD_MORE_INDICATOR_dark.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CBD2DED293F95C7005EA58E /* FEED_WITH_LOAD_MORE_INDICATOR_dark.png */; };
+		7CBD2DF0293F95C7005EA58E /* FEED_WITH_LOAD_MORE_INDICATOR_light.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CBD2DEE293F95C7005EA58E /* FEED_WITH_LOAD_MORE_INDICATOR_light.png */; };
+		7CBD2DF2293F9B9C005EA58E /* LoadMoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBD2DF1293F9B9C005EA58E /* LoadMoreCell.swift */; };
 		7CC5C75329246C2000A730D8 /* FeedCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC5C75229246C2000A730D8 /* FeedCache.swift */; };
 		7CC5C75D2925414D00A730D8 /* FeedImageDataCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC5C75C2925414D00A730D8 /* FeedImageDataCache.swift */; };
 		7CE1901528E63F1F009A3DA4 /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CE1900A28E63F1F009A3DA4 /* EssentialFeed.framework */; };
@@ -267,6 +271,10 @@
 		7CB794E229396D2200EC0DF5 /* FeedEndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedEndpointTests.swift; sourceTree = "<group>"; };
 		7CB794E429396DBB00EC0DF5 /* FeedEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedEndpoint.swift; sourceTree = "<group>"; };
 		7CBBFAEF2910AD4200380A2C /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		7CBD2DEB293F9513005EA58E /* LoadMoreCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadMoreCellController.swift; sourceTree = "<group>"; };
+		7CBD2DED293F95C7005EA58E /* FEED_WITH_LOAD_MORE_INDICATOR_dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FEED_WITH_LOAD_MORE_INDICATOR_dark.png; sourceTree = "<group>"; };
+		7CBD2DEE293F95C7005EA58E /* FEED_WITH_LOAD_MORE_INDICATOR_light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FEED_WITH_LOAD_MORE_INDICATOR_light.png; sourceTree = "<group>"; };
+		7CBD2DF1293F9B9C005EA58E /* LoadMoreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadMoreCell.swift; sourceTree = "<group>"; };
 		7CC5C75229246C2000A730D8 /* FeedCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCache.swift; sourceTree = "<group>"; };
 		7CC5C75C2925414D00A730D8 /* FeedImageDataCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataCache.swift; sourceTree = "<group>"; };
 		7CE1900A28E63F1F009A3DA4 /* EssentialFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EssentialFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -522,6 +530,7 @@
 			isa = PBXGroup;
 			children = (
 				7C5E8BE429120DF7003395B8 /* FeedImageCellController.swift */,
+				7CBD2DEB293F9513005EA58E /* LoadMoreCellController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -531,6 +540,7 @@
 			children = (
 				7CE9E8F7291B15BD0032A5EF /* Helpers */,
 				7C8B8A3629115FF800E4B334 /* FeedImageCell.swift */,
+				7CBD2DF1293F9B9C005EA58E /* LoadMoreCell.swift */,
 				7C223B69292588C60089E7FC /* Feed.storyboard */,
 				7C5E8BF829146081003395B8 /* Feed.xcassets */,
 			);
@@ -696,6 +706,8 @@
 				7CB794B82936B05200EC0DF5 /* FEED_WITH_CONTENT_dark.png */,
 				7CB794BA2936B05200EC0DF5 /* FEED_WITH_CONTENT_light.png */,
 				7CB794D62937C21300EC0DF5 /* FEED_WITH_CONTENT_light_extraExtraExtraLarge.png */,
+				7CBD2DED293F95C7005EA58E /* FEED_WITH_LOAD_MORE_INDICATOR_dark.png */,
+				7CBD2DEE293F95C7005EA58E /* FEED_WITH_LOAD_MORE_INDICATOR_light.png */,
 			);
 			path = snapshots;
 			sourceTree = "<group>";
@@ -1090,6 +1102,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CB794BE2936B05300EC0DF5 /* FEED_WITH_CONTENT_light.png in Resources */,
+				7CBD2DF0293F95C7005EA58E /* FEED_WITH_LOAD_MORE_INDICATOR_light.png in Resources */,
 				7CB794CC2936B7AD00EC0DF5 /* IMAGE_COMMENTS_dark.png in Resources */,
 				7CB794CD2936B7AD00EC0DF5 /* IMAGE_COMMENTS_light.png in Resources */,
 				7CB794BD2936B05300EC0DF5 /* FEED_WITH_FAILED_IMAGE_LOADING_light.png in Resources */,
@@ -1099,6 +1112,7 @@
 				7CB794B32936736000EC0DF5 /* EMPTY_LIST_dark.png in Resources */,
 				7CB794BC2936B05300EC0DF5 /* FEED_WITH_CONTENT_dark.png in Resources */,
 				7CB794D32937B14400EC0DF5 /* LIST_WITH_ERROR_MESSAGE_light_extraExtraExtralarge.png in Resources */,
+				7CBD2DEF293F95C7005EA58E /* FEED_WITH_LOAD_MORE_INDICATOR_dark.png in Resources */,
 				7CB794D52937C0CD00EC0DF5 /* IMAGE_COMMENTS_light_extraExtraExtraLarge.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1150,7 +1164,9 @@
 				7C223B9C2927DCA60089E7FC /* UITableView+HeaderSizing.swift in Sources */,
 				7CB794D92938153500EC0DF5 /* UIVIew+Container.swift in Sources */,
 				7CE9E8F6291B03E80032A5EF /* ErrorView.swift in Sources */,
+				7CBD2DF2293F9B9C005EA58E /* LoadMoreCell.swift in Sources */,
 				7CE9E8FB291B16A10032A5EF /* UIRefreshControl+Helpers.swift in Sources */,
+				7CBD2DEC293F9513005EA58E /* LoadMoreCellController.swift in Sources */,
 				7CB794D12936E98C00EC0DF5 /* CellController.swift in Sources */,
 				7C5E8BFB2914777F003395B8 /* UITableView+Dequeueing.swift in Sources */,
 				7C8B8A392911A9E200E4B334 /* UIView+Shimmering.swift in Sources */,
