@@ -124,11 +124,27 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         return localImageLoader
             .loadImageDataPublisher(from: url)
-            .fallback(to: { [httpClient] in
+            .fallback(to: { [httpClient, logger] in
                 httpClient
                     .getPublisher(url: url)
+                    .logElapsedTime(for: url, with: logger)
                     .tryMap(FeedImageDataMapper.map)
                     .caching(to: localImageLoader, using: url)
             })
+    }
+}
+
+private extension Publisher {
+    func logElapsedTime(for url: URL, with logger: Logger) -> AnyPublisher<Output, Failure> {
+        var startTime = CACurrentMediaTime()
+        
+        return handleEvents(
+            receiveSubscription: { _ in
+                logger.trace("Started loading url: \(url)")
+                startTime = CACurrentMediaTime()
+            }, receiveCompletion: { result in
+                let elapsedTime = CACurrentMediaTime() - startTime
+                logger.trace("Finished loading url: \(url) in \(elapsedTime) seconds")
+            }).eraseToAnyPublisher()
     }
 }
